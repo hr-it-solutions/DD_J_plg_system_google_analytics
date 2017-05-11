@@ -21,8 +21,6 @@ class plgSystemDD_Google_Analytics extends JPlugin
 {
 	protected $app;
 
-	protected $doc;
-
 	protected $propertyid;
 
 	protected $euprivacy;
@@ -43,12 +41,12 @@ class plgSystemDD_Google_Analytics extends JPlugin
 		{
 			// Get plugin parameter
 			$this->propertyid = htmlspecialchars($this->params->get('propertyid'));
-			$this->euprivacy  = (int) $this->params->get('anonymiceip');
+			$this->euprivacy  = (int) $this->params->get('euprivacy');
 
 			if ($this->checkPropertyID())
 			{
 				// Set tracking snipped
-				$this->doc->addScriptDeclaration($this->getTrackingSnipped());
+				JFactory::getDocument()->addScriptDeclaration($this->getTrackingSnipped());
 			}
 		}
 	}
@@ -100,7 +98,6 @@ class plgSystemDD_Google_Analytics extends JPlugin
 		}
 
 		return <<<ALYTICSSCRIPT
-<script>
 /**
  * Creates a temporary global ga object and loads analytics.js.
  * Parameters o, a, and m are all used internally.  They could have been declared using 'var',
@@ -134,9 +131,8 @@ class plgSystemDD_Google_Analytics extends JPlugin
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '{$this->propertyid}', 'auto'); // Creates the tracker with default parameters.
-    ga('set', 'anonymizeIp', {$this->euprivacy});
+    ga('set', 'anonymizeIp', $anonymiceIP);
     ga('send', 'pageview'); // Sends a pageview hit.
-</script>
 ALYTICSSCRIPT;
 	}
 }
