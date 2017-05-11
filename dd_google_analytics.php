@@ -17,7 +17,7 @@ jimport('joomla.access.access');
  *
  * @since  Version  1.0.0.0
  */
-class plgSystemDD_Google_Analytics extends JPlugin
+class PlgSystemDD_Google_Analytics extends JPlugin
 {
 	protected $app;
 

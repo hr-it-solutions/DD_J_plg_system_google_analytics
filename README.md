@@ -1,5 +1,5 @@
 # DD_J_plg_system_google_analytics
-is a Joomla! system plugin to add the Google Analytics Tracking snipped to your website.
+is a Joomla! system plugin to add the Google - Analytics Tracking snipped to your site.
 
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)  
 
