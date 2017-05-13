@@ -7,8 +7,8 @@ Analytics.google.com provides website analytics, this plugin implements that ser
 
 Google Website Property-ID (UA number) must be specified at plugin settings to connect your Website properly.
 
-By default it is setup for **EU Privacy**. This means the **IP anonymization** mode ('set anonymizeIp true' skrippt addition), Google will truncate/anonymize the last octet of the IP address on this mode. Recommended for Member States of the European Union as well as for other parties to the Agreement on the European Economic Area.
-If you dont wish the EU Privacy mode, IP anonimization can also be specified at plugin settings.
+By default it is setup for **EU Privacy**. This means the **IP anonymization** mode ('set anonymizeIp true' script addition), Google will truncate/anonymize the last octet of the IP address on this mode. Recommended for Member States of the European Union as well as for other parties to the Agreement on the European Economic Area.
+If you don't wish the EU Privacy mode, IP anonimization can also be specified at plugin settings.
 
 Please take note of the privacy policy of your country. We provide no liability for legal correctness!
 
