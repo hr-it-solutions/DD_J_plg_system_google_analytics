@@ -30,7 +30,7 @@ class PlgSystemDD_Google_AnalyticsInstallerScript
 	/**
 	 * Enable extensions
 	 *
-	 * @since Version 1.1.0.2
+	 * @since Version  1.0.0.0
 	 *
 	 * @return void
 	 */
@@ -62,7 +62,7 @@ class PlgSystemDD_Google_AnalyticsInstallerScript
 	 *
 	 * @return  boolean
 	 *
-	 * @since Version 1.1.0.2
+	 * @since Version  1.0.0.0
 	 */
 	public function install($parent)
 	{
