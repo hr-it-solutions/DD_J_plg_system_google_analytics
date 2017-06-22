@@ -133,6 +133,19 @@ class PlgSystemDD_Google_Analytics extends JPlugin
     ga('create', '{$this->propertyid}', 'auto'); // Creates the tracker with default parameters.
     ga('set', 'anonymizeIp', $anonymiceIP);
     ga('send', 'pageview'); // Sends a pageview hit.
+	
+	// Disable tracking if the opt-out cookie exists.
+	var disStr = 'ga-disable-{$this->propertyid}';
+	if (document.cookie.indexOf(disStr + '=true') > -1) {
+	  window[disStr] = true;
+	}
+	
+	// Opt-out function
+	function gaOptout() {
+	  document.cookie = disStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disStr] = true;
+	}
+    
 ALYTICSSCRIPT;
 	}
 }
