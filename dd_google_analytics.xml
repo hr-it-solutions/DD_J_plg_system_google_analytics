@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.6.5" type="plugin" group="system" method="upgrade">
     <name>PLG_SYSTEM_DD_GOOGLE_ANALYTICS</name>
-    <version>1.0.0.2</version>
+    <version>1.0.0.3</version>
     <creationDate>11.05.2017</creationDate>
-    <author>HR IT-Solutions Florian Häusler</author>
+    <author>HR-IT-Solutions Florian Häusler</author>
     <authorEmail>info@hr-it-solutions.com</authorEmail>
     <authorUrl>https://www.hr-it-solutions.com</authorUrl>
-    <copyright>Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions</copyright>
+    <copyright>Copyright (C) 2017 - 2018 HR-IT-Solutions GmbH</copyright>
     <license>GNU/GPLv2 only</license>
     <description>PLG_SYSTEM_DD_GOOGLE_ANALYTICS_XML_DESCRIPTION</description>
     <files>
@@ -18,7 +18,7 @@
         <language tag="en-GB">language/en-GB/en-GB.plg_system_dd_google_analytics.ini</language>
     </languages>
     <updateservers>
-        <server type="collection" priority="1" name="HR IT-Solutions Updates">http://www.hr-it-solutions.com/jextensions/update.xml</server>
+        <server type="collection" priority="1" name="HR IT-Solutions Updates">https://www.hr-it-solutions.com/jextensions/update.xml</server>
     </updateservers>
     <config>
         <fields name="params">
